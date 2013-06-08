@@ -13,6 +13,7 @@ group :production do
   gem 'pg'
 end
 
+gem 'simple_form'
 gem 'pure-sass'
 gem 'sass-rails',   '~> 4.0.0.rc1'
 gem 'coffee-rails', '~> 4.0.0'

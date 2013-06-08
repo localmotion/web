@@ -26,6 +26,8 @@ group :test do
   gem 'capybara'
 end
 
+gem 'email_regex'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

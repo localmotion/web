@@ -18,4 +18,10 @@ describe SignUp do
       SignUp.new(email: invalid_email).valid?.should be_false
     end
   end
+
+  it 'should be valid with valid emails' do
+    ['valid@email.com', 'val.id@email.com'].each do |valid_email|
+      SignUp.new(email: valid_email).valid?.should be_true
+    end
+  end
 end

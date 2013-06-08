@@ -64,7 +64,10 @@ GEM
       bourbon (>= 2.1)
       sass (>= 3.2)
     nokogiri (1.5.10)
+    pg (0.15.1)
     polyglot (0.3.3)
+    pure-sass (0.0.2)
+      sass
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -133,6 +136,8 @@ DEPENDENCIES
   email_regex
   jquery-rails
   neat
+  pg
+  pure-sass
   rails (= 4.0.0.rc1)
   rspec-rails
   sass-rails (~> 4.0.0.rc1)

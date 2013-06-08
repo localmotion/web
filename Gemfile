@@ -5,8 +5,15 @@ ruby "2.0.0"
 # Bundle edge Rails instead:
 gem 'rails', '4.0.0.rc1'
 
-gem 'sqlite3'
+group :test, :development do
+  gem 'sqlite3'
+end
 
+group :production do
+  gem 'pg'
+end
+
+gem 'pure-sass'
 gem 'sass-rails',   '~> 4.0.0.rc1'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.0.3'

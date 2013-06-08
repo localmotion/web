@@ -1,4 +1,7 @@
 class SignUp < ActiveRecord::Base
   validates_presence_of :email
-  validates_format_of :email, with: EmailRegex::EMAIL_ADDRESS_REGEX, multiline: true
+  validates_uniqueness_of :email
+  validates_format_of :email, 
+                      multiline: true,
+                      with: EmailRegex::EMAIL_ADDRESS_REGEX
 end

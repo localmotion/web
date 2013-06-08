@@ -1,0 +1,11 @@
+@import 'bourbon';
+
+@mixin chubby-button {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+input.brbn-btn {
+  @include button;
+  @include chubby-button;
+}

@@ -7,5 +7,5 @@
 
 input.brbn-btn {
   @include button;
-  @include chubby-button;
+  font-size: 0.9em;
 }

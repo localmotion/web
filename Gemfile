@@ -4,7 +4,7 @@ ruby "2.0.0"
 
 gem 'rails', '4.0.0'
 
-group :test, :development do
+group :development do
   gem 'sqlite3'
 end
 
@@ -15,13 +15,19 @@ end
 gem 'stripe'
 gem 'simple_form'
 gem 'pure-sass', git: 'https://github.com/johnotander/pure-sass.git'
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'uglifier'
+gem 'sass-rails', '4.0.0'
+gem 'coffee-rails', '4.0.0'
+gem 'jquery-rails', '2.2.1'
+gem 'turbolinks', '1.1.1'
+gem 'jbuilder', '1.0.2'
+gem 'uglifier', '2.1.1'
 gem 'bourbon'
 gem 'neat'
 
-gem 'jquery-rails'
+
+group :doc do
+  gem 'sdoc', '0.3.20', require: false
+end
 
 group :test do
   gem 'rspec-rails'
@@ -32,9 +38,6 @@ gem 'email_regex'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
 
 # Use unicorn as the app server
 # gem 'unicorn'

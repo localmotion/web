@@ -1,0 +1,8 @@
+div.container {
+  @include outer-container;
+}
+
+header.row {
+  height: 50px;
+  @include linear-gradient(to top, #8fdce5, #3dc3d1);
+}

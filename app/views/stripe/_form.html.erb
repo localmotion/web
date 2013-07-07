@@ -1,0 +1,17 @@
+<%= simple_form_for(SignUp.new, 
+                    html: { 
+                      class: 'pure-form pure-form-stacked pure-g', 
+                      id: '#billing-form' }) do |f| %>
+  <fieldset>
+    <%= label_tag :card_number, 'Card Number' %>
+    <%= text_field_tag :card_number, nil, { placeholder: 4242424242424242, id: :card_number } %>
+    <%= label_tag :card_month, 'Card Expiration Month' %>
+    <%= text_field_tag :card_month, nil, { placeholder: 01, id: :card_month, class: 'pure-input-1-10' } %>
+    <%= label_tag :card_year, 'Card Expiration Year' %>
+    <%= text_field_tag :card_year, nil, { placeholder: 14, id: :card_year } %>
+    <%= label_tag :cvc, 'Security Code' %>
+    <%= text_field_tag :cvc, nil, { placeholder: 123, id: :cvc } %>
+    <br>
+    <%= f.submit 'Submit', class: 'brbn-btn' %>
+  </fieldset>
+<% end %>

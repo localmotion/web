@@ -13,7 +13,6 @@ invoice =
           invoice.processCard()
           false
         else
-          alert("No cc provided")
           invoice.error("Please provide a credit card number")
           false
       

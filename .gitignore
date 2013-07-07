@@ -15,3 +15,5 @@
 /tmp
 
 stripe_keys.rb
+
+*.DS_Store

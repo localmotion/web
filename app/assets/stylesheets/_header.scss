@@ -1,0 +1,20 @@
+$align-height: 420%;
+
+nav {
+  height: auto;
+  margin-bottom: 35px;
+  @include row();
+  a {
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+    vertical-align: $align-height;
+    padding: 0 20px;
+  }
+}
+
+header.row {
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: thin solid darken(#FFFFFF, 2%);
+}

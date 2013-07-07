@@ -11,12 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130608205807) do
+ActiveRecord::Schema.define(version: 20130707201548) do
 
   create_table "sign_ups", force: true do |t|
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "stripe_token"
   end
 
 end

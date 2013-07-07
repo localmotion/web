@@ -7,7 +7,8 @@ describe SignUp do
   subject { sign_up }
   
   it { should be }
-  it { should respond_to(:email) }
+  it { should respond_to(:email)        }
+  it { should respond_to(:stripe_token) }
 
   it 'should be invalid without an email' do
     SignUp.new.valid?.should be_false

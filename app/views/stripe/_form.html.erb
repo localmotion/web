@@ -11,8 +11,8 @@
     <%= text_field_tag :card_year, nil, { placeholder: 14, id: :card_year } %>
     <%= label_tag :cvc, 'Security Code' %>
     <%= text_field_tag :cvc, nil, { placeholder: 123, id: :cvc } %>
-    <br>
     <%= hidden_field_tag :stripe_token, nil, id: :stripe_token %>
+    <br>
     <%= f.submit 'Submit', class: 'brbn-btn' %>
   </fieldset>
 <% end %>

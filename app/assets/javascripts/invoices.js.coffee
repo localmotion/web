@@ -34,7 +34,7 @@ invoice =
       invoice.error(response.error.message)
       
   billingInformationInvalid: ->
-    # ...
+    false
     
   error: (msg) ->
-    # ...
+    alert(msg)

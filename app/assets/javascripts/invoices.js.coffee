@@ -27,7 +27,7 @@ invoice =
     
   handleResponse: (status, response) ->
     if status == 200
-      $('#stripe_card_token').val(response.id)
+      $('#stripe_token').val(response.id)
       $('.uceem-form')[0].submit()
     else
       invoice.error(response.error.message)
